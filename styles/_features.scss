@@ -1,5 +1,16 @@
 .features-container {
   background: #323232;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+
+  .wave {
+    position: absolute;
+    left: 0;
+    bottom: -25%;
+    width: 100%;
+    z-index: -1;
+  }
 }
 
 .features {
@@ -33,7 +44,7 @@
       }
 
       img {
-        object-fit: cover;
+        object-fit: contain;
       }
     }
   }
